@@ -1,0 +1,2 @@
+set DOMAIN=elgenero-api-zyhmrxgu3q-ue.a.run.app
+docker-compose -f docker-compose.yml -f compose.prod.yaml build

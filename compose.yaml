@@ -8,6 +8,7 @@
 services:
   app:
     image: local/reflex-app
+    container_name: elgenero_api
     environment:
       DB_URL: sqlite:///data/reflex.db
     build:
