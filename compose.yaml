@@ -7,8 +7,8 @@
 # to publicly accessible domain where app will be hosted
 services:
   app:
-    image: local/reflex-app
     container_name: elgenero_api
+    image: local/reflex-app
     environment:
       DB_URL: sqlite:///data/reflex.db
     build:
@@ -20,6 +20,7 @@ services:
     restart: always
 
   webserver:
+    container_name: elgenero_webserver
     environment:
       DOMAIN: ${DOMAIN:-localhost}
     ports:
