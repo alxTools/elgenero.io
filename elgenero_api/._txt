@@ -1,3 +1,4 @@
+set DOMAIN=http://localhost:8888
 set DOMAIN=elgenero-api-zyhmrxgu3q-ue.a.run.app
 docker-compose -f compose.yml -f compose.prod.yaml build
 
