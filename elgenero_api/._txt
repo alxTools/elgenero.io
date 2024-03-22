@@ -1,2 +1,5 @@
 set DOMAIN=elgenero-api-zyhmrxgu3q-ue.a.run.app
-docker-compose -f docker-compose.yml -f compose.prod.yaml build
+docker-compose -f compose.yml -f compose.prod.yaml build
+
+docker tag local/reflex-app alxtools/elgenero_api
+docker push alxtools/elgenero_api
